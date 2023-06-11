@@ -11,4 +11,4 @@ gamerule doWeatherCycle false
 tellraw @p {"text": "Weather cycle disabled!", "color": "#E5A3FF", "italic": true}
 weather clear
 tellraw @p {"text": "Weather cleared!", "color": "#E5A3FF", "italic": true}
-function tower_challenge:set_base
+function tc:set_base
