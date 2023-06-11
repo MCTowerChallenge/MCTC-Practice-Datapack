@@ -1,0 +1,2 @@
+scoreboard objectives remove TowerHeight
+scoreboard objectives add TowerHeight dummy

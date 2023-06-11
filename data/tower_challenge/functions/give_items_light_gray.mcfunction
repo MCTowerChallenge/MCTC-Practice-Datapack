@@ -9,11 +9,11 @@ item replace entity @p hotbar.5 with minecraft:light_gray_shulker_box 1
 item replace entity @p hotbar.6 with minecraft:light_gray_shulker_box 1
 item replace entity @p hotbar.7 with minecraft:light_gray_shulker_box 1
 
-execute at @s run summon item ~ ~ ~ {PickupDelay:0s,Tags:["temp"],Item:{id:"minecraft:compass",Count:1b,tag:{LodestoneTracked:0b,LodestoneDimension:"minecraft:overworld"}}}
-data modify entity @e[type=item,tag=temp,limit=1] Owner set from entity @s UUID
-execute store result entity @e[type=item,tag=temp,limit=1] Item.tag.LodestonePos.X int 1 run data get entity @s Pos[0]
-execute store result entity @e[type=item,tag=temp,limit=1] Item.tag.LodestonePos.Y int 1 run data get entity @s Pos[1]
-execute store result entity @e[type=item,tag=temp,limit=1] Item.tag.LodestonePos.Z int 1 run data get entity @s Pos[2]
+execute at @p run summon item ~ ~ ~ {PickupDelay:0s,Tags:["temp"],Item:{id:"minecraft:compass",Count:1b,tag:{LodestoneTracked:0b,LodestoneDimension:"minecraft:overworld"}}}
+data modify entity @e[type=item,tag=temp,limit=1] Owner set from entity @p UUID
+execute store result entity @e[type=item,tag=temp,limit=1] Item.tag.LodestonePos.X int 1 run data get entity @p Pos[0]
+execute store result entity @e[type=item,tag=temp,limit=1] Item.tag.LodestonePos.Y int 1 run data get entity @p Pos[1]
+execute store result entity @e[type=item,tag=temp,limit=1] Item.tag.LodestonePos.Z int 1 run data get entity @p Pos[2]
 tag @e[type=item,tag=temp] remove temp
 
 item replace entity @p armor.head with minecraft:diamond_helmet

@@ -5,9 +5,9 @@ item replace entity @p hotbar.2 with minecraft:netherite_shovel{Enchantments:[{i
 item replace entity @p hotbar.3 with minecraft:torch 64
 item replace entity @p hotbar.4 with minecraft:cooked_beef 64
 
-item replace entity @p hotbar.5 with minecraft:red_shulker_box 1
-item replace entity @p hotbar.6 with minecraft:red_shulker_box 1
-item replace entity @p hotbar.7 with minecraft:red_shulker_box 1
+item replace entity @p hotbar.5 with minecraft:orange_shulker_box 1
+item replace entity @p hotbar.6 with minecraft:orange_shulker_box 1
+item replace entity @p hotbar.7 with minecraft:orange_shulker_box 1
 
 execute at @p run summon item ~ ~ ~ {PickupDelay:0s,Tags:["temp"],Item:{id:"minecraft:compass",Count:1b,tag:{LodestoneTracked:0b,LodestoneDimension:"minecraft:overworld"}}}
 data modify entity @e[type=item,tag=temp,limit=1] Owner set from entity @p UUID

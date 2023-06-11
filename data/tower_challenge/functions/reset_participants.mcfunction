@@ -1,0 +1,3 @@
+scoreboard objectives remove participants
+scoreboard objectives add participants dummy
+function tower_challenge:reset_height
